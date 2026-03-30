@@ -23,7 +23,7 @@ const posts = [
     }
 ];
 
-const postsRouter = require('./routes/posts');
+const postsRouter = require('./routers/posts');
 app.use('/posts', postsRouter);
 
 app.get('/', (req, res) => {
@@ -31,7 +31,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/bacheca', (req, res) => {
-    res.json(posts);
+    res.json (posts);
 });     
 
 app.listen(port, () => {
